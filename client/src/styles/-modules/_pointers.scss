@@ -1,0 +1,37 @@
+.pointer {
+  @include flexCenter;
+
+  z-index: 1;
+  position: absolute;
+  top: 130px;
+  grid-template-columns: 7;
+
+  .red::after,
+  .yellow::after {
+    content: "";
+    position: relative;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+  }
+
+  .red::after {
+    background: linear-gradient(145deg, #d21b59, #f9206a);
+    box-shadow: 6px 6px 12px #b3174c, -6px -6px 12px #ff257a;
+  }
+
+  .yellow::after {
+    background: linear-gradient(145deg, #e6d435, #fffb3f);
+    box-shadow: 6px 6px 12px #d9c832, -6px -6px 12px #ffff44;
+  }
+
+  .pointer-cell.red {
+    background: $player-red;
+    box-shadow: inset 6px 6px 12px #b3174c, inset -6px -6px 12px #ff257a;
+  }
+
+  .pointer-cell.yellow {
+    background: $player-yellow;
+    box-shadow: inset 5px 5px 10px #867c1e, inset -5px -5px 10px #ffff44;
+  }
+}

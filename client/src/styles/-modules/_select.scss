@@ -1,0 +1,23 @@
+.select {
+  color: $dark-grey;
+  cursor: pointer;
+  appearance: none;
+  padding: 0 0.5rem;
+  z-index: 2;
+  height: 0.75rem;
+  font-size: 0.25rem;
+  font-weight: 700;
+  width: 80%;
+  border-radius: 0.15rem;
+  border: none;
+  box-shadow: $shadow;
+  margin: {
+    top: 0.25rem;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background: #fafafa;
+  }
+}

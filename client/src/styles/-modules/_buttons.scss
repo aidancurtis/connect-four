@@ -1,0 +1,26 @@
+button {
+  @include flexCenter;
+
+  height: 1rem;
+  width: 80%;
+  font-size: 0.3rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  border: none;
+  margin: {
+    top: 0.25rem;
+    bottom: 0.5rem;
+  }
+  background: $blue-background;
+  box-shadow: $shadow;
+  color: $light-color;
+  padding: 0.25em 1em;
+  cursor: pointer;
+
+  &:hover {
+    background: $light-color;
+    color: $primary-blue;
+  }
+}

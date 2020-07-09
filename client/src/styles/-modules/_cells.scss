@@ -1,0 +1,47 @@
+.cell {
+  background: $primary-blue;
+  box-shadow: $cell-shadow;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    background: #2e2e2e;
+    box-shadow: inset 5px 5px 10px #1c1c1c, inset -5px -5px 10px #404040;
+  }
+
+  &.empty {
+    cursor: not-allowed;
+  }
+
+  &.yellow::before {
+    background: $player-yellow;
+    box-shadow: inset 5px 5px 10px #867c1e, inset -5px -5px 10px #ffff44;
+  }
+
+  &.red::before {
+    background: $player-red;
+    box-shadow: inset 6px 6px 12px #b3174c, inset -6px -6px 12px #ff257a;
+  }
+
+  &.yellow::after,
+  &.red::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border-radius: 50px;
+  }
+
+  &.red::after {
+    background: linear-gradient(145deg, #d21b59, #f9206a);
+    box-shadow: 6px 6px 12px #b3174c, -6px -6px 12px #ff257a;
+  }
+
+  &.yellow::after {
+    background: linear-gradient(145deg, #e6d435, #fffb3f);
+    box-shadow: 5px 5px 12px #c4b52d, -5px -5px 12px #ffff49;
+  }
+}

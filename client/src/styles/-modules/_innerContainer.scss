@@ -1,0 +1,41 @@
+.innerContainer {
+  @include flexCenter;
+
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  color: white;
+  display: none;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+  background: $primary-blue-alpha;
+
+  &.show {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 0.5rem;
+  }
+
+  .form {
+    @include flexCenter;
+
+    width: 440px;
+    font-size: 0.3rem;
+    font-weight: 700;
+    flex-direction: column;
+    padding-top: 0.25rem;
+  }
+
+  #playerMessage {
+    position: absolute;
+  }
+}

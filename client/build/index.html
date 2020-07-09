@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.0" />
+    <!-- Primary Meta Tags -->
+    <title>Connect Four — SocketsIO</title>
+    <meta name="title" content="Connect Four — SocketsIO">
+    <meta name="description" content="Play Connect Four versus friends in online game rooms implemented using NodeJS, Express, and Socket.io .">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://aidancphoto.com/connect-four">
+    <meta property="og:title" content="Connect Four — SocketsIO">
+    <meta property="og:description" content="Play Connect Four versus friends in online game rooms implemented using NodeJS, Express, and Socket.io .">
+    <meta property="og:image" content="./images/connect-four.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://aidancphoto.com/connect-four">
+    <meta property="twitter:title" content="Connect Four — SocketsIO">
+    <meta property="twitter:description" content="Play Connect Four versus friends in online game rooms implemented using NodeJS, Express, and Socket.io .">
+    <meta property="twitter:image" content="./images/connect-four.jpg">
+    <title>Connect Four - SocketsIO</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./icons/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="innerContainer show" id="starting-message">
+      <h1>Connect Four</h1>
+      <h2>Designed by Aidan Curtis</h2>
+      <form autocomplete="off" class="form" action="play.html">
+        <input autofocus type="text" placeholder="Name" name="name" required />
+        <select class="select" name="room" required>
+          <option selected disabled value="">Select a Room</option>
+          <option value="Gryffindor">Gryffindor</option:value>
+          <option value="Ravenclaw">Ravenclaw</option:value>
+          <option value="Hufflepuff">Hufflepuff</option:value>
+          <option value="Slytherin">Slytherin</option:value>
+        </select>
+        <button type="submit" class="button" id="joinButton">Join Game</button>
+      </form>
+    </div>
+    <script src="scripts/join.js"></script>
+  </body>
+</html>

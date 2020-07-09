@@ -1,0 +1,24 @@
+// COLORS
+$primary-blue: #1976d2;
+$primary-blue-alpha: #1976d240;
+$player-red: #e91e63;
+$player-yellow: #ffeb3b;
+$dark-grey: #2e2e2e;
+$light-color: #ecf0f1;
+$shadow: 5px 5px 20px #125699, -5px -5px 20px #2096ff;
+$cell-shadow: inset 12px 12px 20px #1564b3, inset -12px -12px 20px #1d88f2;
+$blue-background: linear-gradient(145deg, #1b7ee1, #176abd);
+
+$cell-size: 70px;
+
+// FONTS
+$font-normal: "DM sans", "Helvetica", sans-serif;
+
+$font-size: 60px;
+
+// BREAKPOINTS
+$breakpoint-desktop: 1200px;
+$breakpoint-laptop: 950px;
+$breakpoint-desktop: 768px;
+$breakpoint-desktop: 400px;
+// @media (max-width: $breakpoint) {}

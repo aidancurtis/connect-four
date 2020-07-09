@@ -1,0 +1,47 @@
+#game {
+  @include flexCenter;
+
+  width: 100vw;
+  height: 100vh;
+
+  .board {
+    z-index: 2;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    padding: 0.25rem;
+    border-radius: 0.75rem;
+    background: $primary-blue;
+  }
+}
+
+#turn-bar {
+  height: 20px;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+  background: black;
+}
+
+.board-background {
+  position: absolute;
+  height: 474px;
+  width: 544px;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  box-shadow: $shadow;
+}
+
+.cell,
+.pointer-cell {
+  @include flexCenter;
+
+  width: $cell-size;
+  height: $cell-size;
+  margin: 2px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+}
