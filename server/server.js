@@ -21,7 +21,7 @@ const { disconnect } = require("process");
 server.listen(PORT, () => console.log(`server running on port ${PORT}`));
 
 // set static folder
-app.use(express.static("../client/src"));
+app.use(express.static("../client/build"));
 
 // run when a client connects
 io.on("connection", (socket) => {
