@@ -10,7 +10,7 @@
   "author": "Aidan Curtis",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.3",
+    "express": "^4.22.1",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
